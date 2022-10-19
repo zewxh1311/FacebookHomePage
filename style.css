@@ -1,0 +1,205 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+}
+
+#logo_text{
+    font-family: Arial, serif;
+    font-size: 2rem;
+}
+
+#logo{
+    width: 20rem;
+    margin-bottom: 1rem;
+
+}
+
+.block{
+    width: 25rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px grey ;
+    margin-bottom: 1rem;
+}
+
+.block_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#email{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    border-bottom-color: rgb(221, 223, 226);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-repeat: stretch;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(221, 223, 226);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(221, 223, 226);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(221, 223, 226);
+    border-top-style: solid;
+    border-top-width: 1px
+}
+
+#password{
+    margin-top: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    border-bottom-color: rgb(221, 223, 226);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-repeat: stretch;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(221, 223, 226);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(221, 223, 226);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(221, 223, 226);
+    border-top-style: solid;
+    border-top-width: 1px
+}
+
+.btn-signup{
+    background-color: #1877f2;;
+    border: 0;
+    margin-top: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    font-family: Arial, serif;
+    color: white;
+    font-size: 0.8rem;
+    transition: background-color 0.2s linear;
+}
+
+.btn-signup:hover{
+    background-color: rgb(66, 103, 178);
+    cursor:pointer;
+}
+
+#forget_password{
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+#forget_password:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr{
+    width: 20rem;
+    height: 0.1rem;
+    margin-top: 1rem;
+}
+
+.btn-register{
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #46df27;
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s linear;
+    font-family: Arial, serif;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.btn-register:hover{
+    background-color: rgb(66, 183, 42);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .row{
+        max-width: 970px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .row{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row{
+        max-width: 320px;
+        flex-direction: column;
+    }
+
+    #email, #password, .btn-register, .btn-signup, hr{
+        width: 15rem;
+    }
+
+    .logo{
+        margin-top: 5rem;
+    }
+
+    #logo_text{
+        font-size: 1rem;
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
